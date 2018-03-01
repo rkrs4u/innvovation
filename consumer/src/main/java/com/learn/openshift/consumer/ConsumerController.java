@@ -20,7 +20,7 @@ public class ConsumerController {
         long startTime = System.currentTimeMillis();
 
         for (int requestId = 0; requestId < requests; requestId++) {
-            responses.add("Req:" + requestId + " " + restTemplate.getForObject("http://localhost:8090/process?requestId=" + requestId, String.class));
+            responses.add("Req:" + requestId + " " + restTemplate.getForObject("http://scalable-service:8080/process?requestId=" + requestId, String.class));
         }
         StringBuilder text = new StringBuilder();
         text.append("<BR> Requests: " + requests);
