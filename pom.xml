@@ -11,5 +11,6 @@
     <modules>
         <module>consumer</module>
         <module>scalable-service</module>
+        <module>admin-ui</module>
     </modules>
 </project>
